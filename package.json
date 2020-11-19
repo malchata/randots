@@ -1,0 +1,35 @@
+{
+  "name": "randots",
+  "version": "0.1.0",
+  "description": "Randots! All over the place! Rand(om) dots!",
+  "main": "randots.js",
+  "scripts": {
+    "copy": "cp -fv ./randots.js ./test/",
+    "server": "node ./http.js",
+    "test": "npm run copy && npm run server",
+    "lint": "npx eslint ./randots.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malchata/randots.git"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "paint",
+    "worklet",
+    "css",
+    "houdini"
+  ],
+  "author": "Jeremy L. Wagner <jeremy.l.wagner@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malchata/randots/issues"
+  },
+  "homepage": "https://github.com/malchata/randots#readme",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "express": "^4.17.1"
+  }
+}
